@@ -14,5 +14,19 @@ public class caneta {
         float Ponta ;
         int carga;
         boolean Tampada;
-    
+        
+        
+        void rabiscar(){
+        }
+        
+        void Tampar(){
+        }
+        
+        void Destampar(){
+        }
+        
+        void Status(){
+            System.out.println("A cor da caneta é: " + this.cor);
+            System.out.println("Está tampada? " + this.Tampada);
+        }
 }

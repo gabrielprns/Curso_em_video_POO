@@ -11,7 +11,11 @@ package Aula2;
  */
 public class Principal {
     public static void main(String[] args) {
-     
+     caneta c1= new caneta();
+     c1.cor="Azul";
+     c1.Ponta=0.5f;
+     c1.Tampada=false;
+     c1.Status();
     }
     
 }
