@@ -17,6 +17,11 @@ public class caneta {
         
         
         void rabiscar(){
+            if(this.Tampada==true){
+                System.out.println("Não pode rabiscar");
+            }else{
+                System.out.println("Rabiscando");
+            }
         }
         
         void Tampar(){
