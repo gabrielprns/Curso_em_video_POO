@@ -10,5 +10,9 @@ package Aula2;
  * @author Usuario
  */
 public class caneta {
+        String cor, modelo ;
+        float Ponta ;
+        int carga;
+        boolean Tampada;
     
 }
