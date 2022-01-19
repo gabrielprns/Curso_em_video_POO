@@ -14,7 +14,7 @@ public class Principal {
      caneta c1= new caneta();
      c1.cor="Azul";
      c1.Ponta=0.5f;
-     c1.Tampada=false;
+     c1.Destampar();
      c1.Status();
     }
     
