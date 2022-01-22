@@ -19,4 +19,9 @@ public class ContaBanco {
     
     //Métodos
     
+    public ContaBanco(){
+        saldo=0;
+        status=false;
+    }
+    
 }
