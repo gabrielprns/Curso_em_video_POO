@@ -65,6 +65,7 @@ public class ContaBanco {
     }
     
     //Métodos
+    
         //Abrir a Conta
     public void abrirConta(String t){
         setTipo(t);
@@ -75,6 +76,7 @@ public class ContaBanco {
             setSaldo(150);
         }
     }
+        
         //Fechar a Conta
     public String fecharConta(){
         String M = null;
@@ -87,6 +89,28 @@ public class ContaBanco {
             setStatus(false);
         }
         return M;
+    }
+       
+        //Depositar
+    public void depositar(float v){
+        if(status==true){
+           setSaldo(getSaldo()+v);
+        }else{
+            System.out.println("Impossível Depositar");
+        }
+    }
+    
+    public void sacar(float v){
+        if(status==true){
+            if(saldo>v){
+                saldo=saldo-v;
+            }else{
+                System.out.println("Saldo Insuficiente");
+            }
+        }else{
+            System.out.println("Impossível sacar");
+        }
+        
     }
     
     
