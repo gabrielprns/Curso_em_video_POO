@@ -11,10 +11,12 @@ package Aula4;
  */
 public class Aula4 {
     public static void main(String[] args) {
-        Caneta c = new Caneta();
-        c.setModelo("BIC");
-        c.setPonta(0.9f);
-        c.status(); 
+        Caneta c1 = new Caneta("Bic","Azul",0.9f);
+        c1.status();
+        
+        
+        Caneta c2 = new Caneta("Véia","preta",0.7f);
+        c2.status();
         
     }
     
