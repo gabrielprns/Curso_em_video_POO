@@ -56,7 +56,7 @@ public class ContaBanco {
         this.saldo = s;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 
@@ -99,7 +99,8 @@ public class ContaBanco {
             System.out.println("Impossível Depositar");
         }
     }
-    
+        
+        //Sacar
     public void sacar(float v){
         if(status==true){
             if(saldo>v){
@@ -113,6 +114,22 @@ public class ContaBanco {
         
     }
     
-    
-    
+        //Pagamento Mensal
+    public void pagarMensal(){
+        float v = 0;
+        if(tipo=="CC"){
+            v=12;
+        }else if(tipo=="CP"){
+            v=20;
+        }
+        if(status==true){
+            if(saldo > v){
+                saldo=saldo-v ;
+            }else{
+                System.out.println("Saldo Insuficiente");
+            }
+        }else{
+            System.out.println("Impossível pagar");
+        }
+    }  
 }
