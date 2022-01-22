@@ -28,32 +28,32 @@ public class ContaBanco {
         return numConta;
     }
 
-    public void setNumConta(int numConta) {
-        this.numConta = numConta;
+    public void setNumConta(int n) {
+        this.numConta = n;
     }
 
     public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setTipo(String t) {
+        this.tipo = t;
     }
 
     public String getDono() {
         return dono;
     }
 
-    public void setDono(String dono) {
-        this.dono = dono;
+    public void setDono(String d) {
+        this.dono = d;
     }
 
     public float getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(float saldo) {
-        this.saldo = saldo;
+    public void setSaldo(float s) {
+        this.saldo = s;
     }
 
     public boolean isStatus() {
@@ -65,6 +65,29 @@ public class ContaBanco {
     }
     
     //Métodos
+        //Abrir a Conta
+    public void abrirConta(String t){
+        setTipo(t);
+        setStatus(true);
+        if(t=="CC"){
+            setSaldo(50);
+        }else if(t=="CP"){
+            setSaldo(150);
+        }
+    }
+        //Fechar a Conta
+    public String fecharConta(){
+        String M = null;
+        if(saldo>0){
+            M="Conta com om Dinheiro";     
+        }else if(saldo<0){
+            M="Conta com Débito";
+        }else{
+            M="Sua conta será fechada";
+            setStatus(false);
+        }
+        return M;
+    }
     
     
     
