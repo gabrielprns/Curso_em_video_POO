@@ -17,12 +17,25 @@ public class ContaBanco {
     private float saldo;
     private boolean status;
     
-    //Métodos Especiais e Construtor
+    //Estado Atual
+    
+    public void estadoAtual(){
+        System.out.println("------------------");
+        System.out.println("Conta:"+ this.getNumConta());
+        System.out.println("Tipo"+ this.getTipo());
+        System.out.println("Dono: "+ this.getDono());
+        System.out.println("Saldo: "+ this.getSaldo());
+        System.out.println("Status"+ this.getStatus());
+    }
+    
+    //Método Construtor
     
     public ContaBanco(){
-        saldo=0;
-        status=false;
+        this.setSaldo(0);
+        this.setStatus(false);
     }
+    
+    //Métodos Especiais
 
     public int getNumConta() {
         return numConta;
@@ -68,33 +81,33 @@ public class ContaBanco {
     
         //Abrir a Conta
     public void abrirConta(String t){
-        setTipo(t);
-        setStatus(true);
+        this.setTipo(t);
+        this.setStatus(true);
         if(t=="CC"){
-            setSaldo(50);
+            this.setSaldo(50);
         }else if(t=="CP"){
-            setSaldo(150);
+            this.setSaldo(150);
         }
     }
         
         //Fechar a Conta
     public String fecharConta(){
         String M = null;
-        if(saldo>0){
+        if(this.getSaldo()>0){
             M="Conta com om Dinheiro";     
-        }else if(saldo<0){
+        }else if(this.getSaldo()<0){
             M="Conta com Débito";
         }else{
             M="Sua conta será fechada";
-            setStatus(false);
+            this.setStatus(false);
         }
         return M;
     }
        
         //Depositar
     public void depositar(float v){
-        if(status==true){
-           setSaldo(getSaldo()+v);
+        if(this.getStatus()){
+           this.setSaldo(this.getSaldo()+v);
         }else{
             System.out.println("Impossível Depositar");
         }
@@ -102,9 +115,9 @@ public class ContaBanco {
         
         //Sacar
     public void sacar(float v){
-        if(status==true){
-            if(saldo>v){
-                saldo=saldo-v;
+        if(this.getStatus()){
+            if(this.getSaldo()>=v){
+                this.setSaldo(getSaldo()-v);
             }else{
                 System.out.println("Saldo Insuficiente");
             }
@@ -117,14 +130,14 @@ public class ContaBanco {
         //Pagamento Mensal
     public void pagarMensal(){
         float v = 0;
-        if(tipo=="CC"){
+        if(this.getTipo()=="CC"){
             v=12;
-        }else if(tipo=="CP"){
+        }else if(this.getTipo()=="CP"){
             v=20;
         }
-        if(status==true){
-            if(saldo > v){
-                saldo=saldo-v ;
+        if(this.getStatus()){
+            if(this.getSaldo() > v){
+                this.setSaldo(getSaldo()-v);
             }else{
                 System.out.println("Saldo Insuficiente");
             }
