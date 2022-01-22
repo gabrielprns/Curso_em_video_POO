@@ -22,10 +22,10 @@ public class ContaBanco {
     public void estadoAtual(){
         System.out.println("------------------");
         System.out.println("Conta:"+ this.getNumConta());
-        System.out.println("Tipo"+ this.getTipo());
+        System.out.println("Tipo: "+ this.getTipo());
         System.out.println("Dono: "+ this.getDono());
         System.out.println("Saldo: "+ this.getSaldo());
-        System.out.println("Status"+ this.getStatus());
+        System.out.println("Status: "+ this.getStatus());
     }
     
     //Método Construtor

@@ -12,7 +12,14 @@ package Aula5;
 public class Aula5 {
     
     public static void main(String[] args) {
-        
+        ContaBanco p1= new ContaBanco();
+        p1.setNumConta(11111);
+        p1.setDono("Kleber");
+        p1.abrirConta("CC");
+        p1.depositar(700);
+        p1.sacar(750);
+        p1.fecharConta();
+        p1.estadoAtual();
     }
     
 }
