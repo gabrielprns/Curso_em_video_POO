@@ -62,12 +62,14 @@ public class ControleRemoto implements Controlador{
 
     @Override
     public void abrirMenu() {
+        System.out.println("----Menu-----");
         System.out.println("Está ligado? " + this.getLigado());
-        System.out.println("Está desligado? " + this.getTocando());
+        System.out.println("Está tocando? " + this.getTocando());
         System.out.println("Volume: " + this.getVolume());
         for (int i=0; i<= this.getVolume(); i+=10){
             System.out.println("[]");
         }
+        System.out.println("");
     }
 
     @Override
@@ -79,6 +81,8 @@ public class ControleRemoto implements Controlador{
     public void maisVolume() {
         if(this.getLigado()){
             this.setVolume(getVolume()+5);
+        }else{
+            System.out.println("Impossível aumentar volume");
         }
     }
 
@@ -86,6 +90,8 @@ public class ControleRemoto implements Controlador{
     public void menosVolume() {
         if (this.getLigado()){
             this.setVolume(getVolume()-5);
+        }else{
+            System.out.println("Impossível diminuir volume");
         }
     }
 
@@ -108,6 +114,8 @@ public class ControleRemoto implements Controlador{
     public void play() {
         if (this.getLigado() && !(this.getTocando())){
             this.setTocando(true);
+        }else{
+            System.out.println("Não consegui reproduzir");
         }
     }
 
@@ -115,6 +123,8 @@ public class ControleRemoto implements Controlador{
     public void pause() {
         if (this.getLigado() && (this.getTocando())){
             this.setTocando(false);
+        }else{
+            System.out.println("Não pausar");
         }
     }
     
