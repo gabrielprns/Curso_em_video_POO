@@ -5,6 +5,8 @@
  */
 package Aula7_8;
 
+import java.util.Random;
+
 /**
  *
  * @author Usuario
@@ -19,7 +21,7 @@ public class Luta {
     
     //Métodos Públicos
     
-    public void marcarLuta(Lutador l1, Lutador l2){
+   public void marcarLuta(Lutador l1, Lutador l2){
         if(l1.getCategoria().equals(l2.getCategoria()) 
            && l1 != l2){
            this.setAprovada(true);
@@ -31,6 +33,37 @@ public class Luta {
             this.setDesafiado(null);
             this.setDesafiante(null);
         
+        }
+    }
+    
+    public void lutar(){
+        if(this.getAprovada()){
+            System.out.println("### Desafiado ###");
+            this.desafiado.apresentar();
+            System.out.println("### Desafiante ###");
+            this.desafiante.apresentar();
+            
+            Random alet = new Random();
+            int vencedor = alet.nextInt(3);
+            switch(vencedor) {
+                case 0: //Empate
+                    System.out.println("Empatou!");
+                    this.desafiado.empatarLuta();
+                    this.desafiante.empatarLuta();
+                    break;
+                case 1 :// Desafiado Vence
+                    System.out.println("Vitória de " + this.desafiado.getNome());
+                    this.desafiado.ganharLuta();
+                    this.desafiante.perderLuta();
+                    break;
+                 case 2 :// Desafiante Vence
+                    System.out.println("Vitória de " + this.desafiante.getNome());
+                    this.desafiante.ganharLuta();
+                    this.desafiado.perderLuta();
+                    break;
+            }
+        }else{
+            System.out.println("A luta não pode acontecer");
         }
     }
     
