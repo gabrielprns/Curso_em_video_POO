@@ -17,19 +17,33 @@ public class Lutador {
     //Métodos Públicos
     
     public void apresentar(){
+        System.out.println("----------------------------------");
+        System.out.println("Lutador: "+ this.getNome());
+        System.out.println("Diretamente de : "+ this.getNacionalidade());
+        System.out.println("com "+ this.getIdade()+ " anos e "+ this.getAltura()+ " de altura" );
+        System.out.println("pesnado"+ this.getPeso()+ "KG");
+        System.out.println(this.getVitorias()+ " Vitórias");
+        System.out.println(this.getDerrotas() + " Derrotas");
+        System.out.println(this.getEmpates()+ " Empates!");
     }
     
     public void status(){
+        System.out.println(this.getNome()+ " é um peso" + this.getCategoria());
+        System.out.println("Ganhou " + this.getVitorias()+ " Vezes");
+        System.out.println("Perdeu " + this.getDerrotas() + " Vezes");
+        System.out.println("Empatou " + this.getEmpates()+ " Vezes");
     }
     
     public void ganharLuta(){
+        this.setVitorias(this.getVitorias()+1);
     }
     
     public void perderLuta(){
+        this.setDerrotas(this.getDerrotas()+1);
     }
     
     public void empatarLuta(){
-    
+        this.setEmpates(this.getEmpates()+1);
     }
     
     //Método Construtor
