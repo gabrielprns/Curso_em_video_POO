@@ -45,6 +45,7 @@ public class Luta {
             
             Random alet = new Random();
             int vencedor = alet.nextInt(3);
+            System.out.println("======Resultado da Luta=======");
             switch(vencedor) {
                 case 0: //Empate
                     System.out.println("Empatou!");
@@ -62,6 +63,7 @@ public class Luta {
                     this.desafiado.perderLuta();
                     break;
             }
+            System.out.println("=========================");
         }else{
             System.out.println("A luta não pode acontecer");
         }
