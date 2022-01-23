@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aula7;
+package Aula7_8;
 
 /**
  *
  * @author Usuario
  */
-public class Aula7 {
+public class UltraCombat {
     
     public static void main(String[] args) {
         Lutador l[]= new Lutador[6];

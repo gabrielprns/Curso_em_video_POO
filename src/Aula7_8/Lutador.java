@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aula7;
+package Aula7_8;
 
 /**
  *
@@ -14,9 +14,6 @@ public class Lutador {
     private int idade, vitorias, derrotas, empates;
     private float peso, altura;
 
-    Lutador() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     //Métodos Públicos
     
