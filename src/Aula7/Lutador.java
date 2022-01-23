@@ -13,6 +13,10 @@ public class Lutador {
     private String nome, nacionalidade, categoria;
     private int idade, vitorias, derrotas, empates;
     private float peso, altura;
+
+    Lutador() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     //Métodos Públicos
     
@@ -21,14 +25,14 @@ public class Lutador {
         System.out.println("Lutador: "+ this.getNome());
         System.out.println("Diretamente de : "+ this.getNacionalidade());
         System.out.println("com "+ this.getIdade()+ " anos e "+ this.getAltura()+ " de altura" );
-        System.out.println("pesnado"+ this.getPeso()+ "KG");
+        System.out.println("pesando "+ this.getPeso()+ "KG");
         System.out.println(this.getVitorias()+ " Vitórias");
         System.out.println(this.getDerrotas() + " Derrotas");
         System.out.println(this.getEmpates()+ " Empates!");
     }
     
     public void status(){
-        System.out.println(this.getNome()+ " é um peso" + this.getCategoria());
+        System.out.println(this.getNome()+ " é um peso " + this.getCategoria());
         System.out.println("Ganhou " + this.getVitorias()+ " Vezes");
         System.out.println("Perdeu " + this.getDerrotas() + " Vezes");
         System.out.println("Empatou " + this.getEmpates()+ " Vezes");
@@ -56,7 +60,7 @@ public class Lutador {
         this.vitorias = vi;
         this.derrotas = de;
         this.empates = em;
-        this.peso = pe;
+        this.setPeso(pe);
         this.altura = al;
     }
     
