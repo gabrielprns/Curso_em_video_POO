@@ -9,12 +9,12 @@ package Aula_10;
  *
  * @author Usuario
  */
-public class Funcionario {
+public class Funcionario extends Pessoa {
     private String setor;
     private boolean trabalhando;
     
     public void mudaTrabalho(){
-    
+        this.setTrabalhando(getTrabalhando()!=trabalhando);
     }
 
     public String getSetor() {
@@ -25,7 +25,7 @@ public class Funcionario {
         this.setor = setor;
     }
 
-    public boolean isTrabalhando() {
+    public boolean getTrabalhando() {
         return trabalhando;
     }
 
