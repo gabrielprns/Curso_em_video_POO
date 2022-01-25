@@ -14,6 +14,7 @@ public class Aluno extends Pessoa{
     private String curso;
     
     public void cancelarMatr(){
+        System.out.println("A matricúla será cancelada");
     }
 
     public int getMat() {

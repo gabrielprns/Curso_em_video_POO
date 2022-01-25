@@ -32,6 +32,10 @@ public class Funcionario extends Pessoa {
     public void setTrabalhando(boolean trabalhando) {
         this.trabalhando = trabalhando;
     }
+
+    
+    
+    
     
     
     
