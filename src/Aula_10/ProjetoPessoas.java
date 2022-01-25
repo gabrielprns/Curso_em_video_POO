@@ -21,6 +21,7 @@ public class ProjetoPessoas {
         p3.setNome("Claudio");
         p4.setNome("Fabiana");
         
+        p2.setIdade(16);
         p2.setCurso("Computação");
         
         System.out.println(p1.toString());
