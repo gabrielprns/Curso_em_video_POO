@@ -14,7 +14,7 @@ public class WebtoonProject {
     public static void main(String[] args) {
         Obras MyKingdom = new Obras();
         MyKingdom.abrirCap("My kingdom");
-        MyKingdom.MostarAutor("Rick");
+        MyKingdom.MostarAutor("Hebert");
         MyKingdom.abrirCap("One Piece");
         MyKingdom.MostarAutor("Oda");
         
