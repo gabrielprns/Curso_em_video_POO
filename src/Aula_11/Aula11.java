@@ -12,14 +12,15 @@ package Aula_11;
 public class Aula11 {
     public static void main(String[] args) {
         Bolsista aluno = new Bolsista();
-        
+        Aluno p = new Aluno();
+        p.setNome("Henrique");
         aluno.setNome("Gabriel");
         aluno.setMatricula(11112);
         aluno.setCurso("Informática");
         aluno.setBolsa(12.5f);
         aluno.pagarMensalidade();
         System.out.println(aluno.status());
-        System.out.println(aluno.statusPessoa());
+        System.out.println(p.status());
     }
     
 }

@@ -43,7 +43,7 @@ public abstract class Pessoa {
     }
 
     
-    public String statusPessoa() {
+    public String status() {
         return "Dados{" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + '}';
     }
     

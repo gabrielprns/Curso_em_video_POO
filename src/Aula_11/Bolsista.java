@@ -29,9 +29,10 @@ public class Bolsista extends Aluno{
         this.bolsa = bolsa;
     }
 
-    
+     
+    @Override
     public String status() {
-        return "Bolsista{" + "bolsa=" + bolsa + '}';
+        return "Dados{" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + ", bolsa=" + bolsa + '}';
     }
     
 }
