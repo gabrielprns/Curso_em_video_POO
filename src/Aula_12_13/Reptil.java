@@ -3,37 +3,38 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aula_12;
+package Aula_12_13;
 
 /**
  *
  * @author Usuario
  */
-public class Mamifero extends Animal {
-    
-    public String corPelo;
+public class Reptil extends Animal{
+    private String corEscama;
 
     @Override
     public void locomover() {
-        System.out.println("Correndo");
+        System.out.println("Rastejando");
     }
 
     @Override
     public void alimentar() {
-        System.out.println("Mamando");
+        System.out.println("Comedo vegetais");
     }
 
     @Override
     public void emitirSom() {
-        System.out.println("Som de mamífero");
+        System.out.println("Som de Réptil");
     }
 
-    public String getCorPelo() {
-        return corPelo;
+    public String getCorEscama() {
+        return corEscama;
     }
 
-    public void setCorPelo(String corPelo) {
-        this.corPelo = corPelo;
+    public void setCorEscama(String corEscama) {
+        this.corEscama = corEscama;
     }
+    
+    
     
 }

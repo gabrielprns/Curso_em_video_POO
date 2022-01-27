@@ -3,17 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aula_12;
+package Aula_12_13;
 
 /**
  *
  * @author Usuario
  */
-public class Cachorro extends Mamifero {
-    
+public class Lobo extends Mamifero{
     @Override
     public void emitirSom() {
-        System.out.println("Latindo");
+        System.out.println("Uivando");
     }
-    
 }

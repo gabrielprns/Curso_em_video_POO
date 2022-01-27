@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aula_12;
+package Aula_12_13;
 
 /**
  *
  * @author Usuario
  */
-public class Aula12 {
+public class PetShop {
     public static void main(String[] args) {
-        Mamifero m = new Mamifero();
-        m.alimentar();
+        Lobo l = new Lobo();
+        l.emitirSom();
         Cachorro c = new Cachorro();
         c.emitirSom();
         
