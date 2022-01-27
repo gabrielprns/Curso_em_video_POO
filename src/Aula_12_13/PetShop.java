@@ -12,7 +12,8 @@ package Aula_12_13;
 public class PetShop {
     public static void main(String[] args) {
         Cachorro c = new Cachorro();
-        c.reagir("Olá");
+        c.reagir(true);
+        c.reagir(false);
         
     }
     

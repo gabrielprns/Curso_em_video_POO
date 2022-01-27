@@ -42,6 +42,7 @@ public class Cachorro extends Mamifero {
             System.out.println("Abanar");
         }else{
             System.out.println("Rosnar e Latir");
+            this.emitirSom();
         }
     
     }
