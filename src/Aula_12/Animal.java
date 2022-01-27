@@ -16,6 +16,7 @@ public abstract class Animal {
     protected int membros;
     
     
+    
     //Métodos de Animal
     public abstract void locomover();
     public abstract void alimentar();
