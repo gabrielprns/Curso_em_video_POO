@@ -13,7 +13,6 @@ public class Mamifero extends Animal {
     
     public String corPelo;
 
-    
     @Override
     public void locomover() {
         System.out.println("Correndo");
