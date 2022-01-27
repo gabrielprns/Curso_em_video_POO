@@ -10,6 +10,7 @@ package Aula_12;
  * @author Usuario
  */
 public class Reptil extends Animal{
+    private String corEscama;
 
     @Override
     public void locomover() {
@@ -25,5 +26,7 @@ public class Reptil extends Animal{
     public void emitirSom() {
         System.out.println("Som de Réptil");
     }
+    
+    
     
 }

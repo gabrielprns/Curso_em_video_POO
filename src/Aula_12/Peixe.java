@@ -27,4 +27,18 @@ public class Peixe extends Animal{
         System.out.println("Peixe não faz som");
     }
     
+    public void soltarBolhas(){
+        System.out.println("Sontando bolhas");
+    }
+
+    public String getCorEscama() {
+        return corEscama;
+    }
+
+    public void setCorEscama(String corEscama) {
+        this.corEscama = corEscama;
+    }
+    
+    
+    
 }
