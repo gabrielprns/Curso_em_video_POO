@@ -27,6 +27,10 @@ public class Ave extends Animal {
     public void emitirSom() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    public void fazerNinho(){
+        System.out.println("Construindo ninho");
+    }
 
     public String getCorPena() {
         return corPena;
