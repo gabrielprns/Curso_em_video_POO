@@ -29,14 +29,17 @@ public class Video implements AcoesVideo{
     //métodos publicos
     @Override
     public void play() {
+        this.reproduzir=true;
     }
 
     @Override
     public void pause() {
+        this.reproduzir=false;
     }
 
     @Override
     public void like() {
+        this.curtidas++;
     }
     
     //métodos especiais
