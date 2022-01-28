@@ -80,6 +80,17 @@ public class Video implements AcoesVideo{
     private void setReproduzir(boolean reproduzir) {
         this.reproduzir = reproduzir;
     }
+
+    @Override
+    public String toString() {
+        return "Video{" + "titulo=" + titulo + 
+                ", avaliacao=" + avaliacao + 
+                ", views=" + views + 
+                ", curtidas=" + curtidas + 
+                ", reproduzir=" + reproduzir + '}';
+    }
+    
+    
     
     
 }
