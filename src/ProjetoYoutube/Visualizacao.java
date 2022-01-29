@@ -30,6 +30,7 @@ public class Visualizacao {
     
     public void avaliar(float porc){
         int tot=0;
+        
         if(porc<=20){
             tot=3;
         }else if(porc<=50){
