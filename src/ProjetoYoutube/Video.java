@@ -48,7 +48,7 @@ public class Video implements AcoesVideo{
         return titulo;
     }
 
-    private void setTitulo(String titulo) {
+    public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
@@ -56,7 +56,7 @@ public class Video implements AcoesVideo{
         return avaliacao;
     }
 
-    private void setAvaliacao(int avaliacao) {
+    public void setAvaliacao(int avaliacao) {
         this.avaliacao = avaliacao;
     }
 
@@ -64,7 +64,7 @@ public class Video implements AcoesVideo{
         return views;
     }
 
-    private void setViews(int views) {
+    public void setViews(int views) {
         this.views = views;
     }
 
@@ -72,7 +72,7 @@ public class Video implements AcoesVideo{
         return curtidas;
     }
 
-    private void setCurtidas(int curtidas) {
+    public void setCurtidas(int curtidas) {
         this.curtidas = curtidas;
     }
 
@@ -80,7 +80,7 @@ public class Video implements AcoesVideo{
         return reproduzir;
     }
 
-    private void setReproduzir(boolean reproduzir) {
+    public void setReproduzir(boolean reproduzir) {
         this.reproduzir = reproduzir;
     }
 
