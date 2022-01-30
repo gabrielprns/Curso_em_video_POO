@@ -1,7 +1,6 @@
 # Curso_em_vídeo_LPPO
 
-    Passos realizados:
-    
+    Passos realizados:    
     
     1. Projetos realizados utilizando técnica de orientação a objetos.
 
