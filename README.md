@@ -1,4 +1,4 @@
-# Curso_em_video_LPPO
+# Curso_em_vídeo_LPPO
 
     Passos realizados:
   
