@@ -1,5 +1,6 @@
 # Curso_em_video_LPPO
 
-1. Projetos realizados utilizando técnica de orientação a objetos.
+# Passos relizados:
+  1. Projetos realizados utilizando técnica de orientação a objetos.
 
-2. Produzido com linguagem java em ambiente netbeans.
+  2. Produzido com linguagem java em ambiente netbeans.
